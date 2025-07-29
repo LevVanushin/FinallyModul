@@ -1,0 +1,125 @@
+@media (max-width: 1500px){
+  .caption{
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .main-section-left{
+    max-width: 702px;
+    gap: 24px;
+    padding: 48px 24px 20px 32px;
+
+    .about__description{
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 1.4px;
+    }
+    .products{
+      &__item{
+        padding: 14.5px 0px;
+      }
+      &__link{
+        font-size: 16px;
+        padding: 14.5px 24px;
+      }
+    }
+
+    .form{
+      grid-template-columns: repeat(auto-fill, minmax(276px, 1fr));
+      gap: 12px;
+
+      .input{
+        font-size: 14px;
+        letter-spacing: 1.4px;
+      }
+
+      &__text-input{
+        max-width: 442px;
+        grid-area: 3 / 1 / 2 / 3;
+        padding: 18px 0px 18px 12px;
+      }
+
+      &__button{
+        max-width: 110px;
+        padding: 15px 10.5px;
+        grid-area: 2 / 2 / 2 / 3;
+        justify-self: end;
+        font-size: 16px;
+        letter-spacing: 1.6px;
+      }
+    } 
+
+    
+  } 
+
+  .main-section-left__caption{
+    max-width: 540px;
+  }
+
+
+  .main-section-right__img{
+    max-width: 372px;
+  }
+}
+
+
+@media (max-width: 800px) {
+  body{
+    padding: 0px 32px 0px 32px;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main-section-left {
+    align-items: center;
+
+    .main-section-left__caption{
+      max-width: 476px;
+    }
+    .about{
+      align-items: center;
+      text-align: center;
+    }
+
+    .products{
+      align-items: center;
+      text-align: center;
+
+      &__list{
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .contact{
+      text-align: center;
+
+      .form{
+        width: 479px;
+        display: flex;
+        flex-direction: column;
+        
+        &__text-input{
+          max-width: 476px;
+        }
+
+        
+
+        &__button{
+          align-self: center;
+          grid-row: auto;
+          grid-column: auto;
+
+          max-width: 100%;
+        }
+      }
+    }
+
+  }
+
+  .main-section-right{
+    justify-content: center;
+  }
+}

@@ -53,7 +53,7 @@ table {
 }
 
 body {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 1282px), url(../images/main-bg.png);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 1282px), url(../images/main-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -85,16 +85,17 @@ a {
   font-family: "Roboto", sans-serif;
   margin-bottom: 26px;
   color: white;
+  letter-spacing: 2.4px;
 }
 
 .container {
   max-width: 100%;
   display: flex;
-  flex-wrap: wrap;
 }
 
 .main-section-left {
   max-width: 1282px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 64px;
@@ -111,7 +112,7 @@ a {
   letter-spacing: 2px;
   line-height: 23px;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
   font-family: "Roboto", sans-serif;
 }
 .main-section-left .products {
@@ -141,7 +142,7 @@ a {
   color: white;
   text-transform: uppercase;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   font-family: "Roboto", sans-serif;
 }
 .main-section-left .products__link:hover {
@@ -151,13 +152,13 @@ a {
 .main-section-left .form {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(292px, 1fr));
-  gap: 11px;
+  gap: 12px;
 }
 .main-section-left .form .input {
   border: none;
   outline: none;
   letter-spacing: 1.8px;
-  padding: 14px;
+  padding: 12px 0px 12px 12px;
   font-size: 18px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
@@ -169,6 +170,7 @@ a {
   color: black;
 }
 .main-section-left .form__text-input {
+  max-width: 100%;
   padding: 31px 13px;
   grid-column: span 2;
   outline: none;
@@ -179,14 +181,14 @@ a {
   font-family: "Roboto", sans-serif;
 }
 .main-section-left .form__button {
-  width: 200px;
+  max-width: 200px;
   grid-row: 3;
   background: none;
   border: 2px white solid;
   padding: 13.5px 24px;
   color: white;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   font-family: "Roboto", sans-serif;
   transition: background-color 0.2s ease-out;
   cursor: pointer;
@@ -200,9 +202,108 @@ a {
 }
 
 .main-section-right {
+  margin: 0 auto;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: end;
+}
+
+@media (max-width: 1500px) {
+  .caption {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  .main-section-left {
+    max-width: 702px;
+    gap: 24px;
+    padding: 48px 24px 20px 32px;
+  }
+  .main-section-left .about__description {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1.4px;
+  }
+  .main-section-left .products__item {
+    padding: 14.5px 0px;
+  }
+  .main-section-left .products__link {
+    font-size: 16px;
+    padding: 14.5px 24px;
+  }
+  .main-section-left .form {
+    grid-template-columns: repeat(auto-fill, minmax(276px, 1fr));
+    gap: 12px;
+  }
+  .main-section-left .form .input {
+    font-size: 14px;
+    letter-spacing: 1.4px;
+  }
+  .main-section-left .form__text-input {
+    max-width: 442px;
+    grid-area: 3/1/2/3;
+    padding: 18px 0px 18px 12px;
+  }
+  .main-section-left .form__button {
+    max-width: 110px;
+    padding: 15px 10.5px;
+    grid-area: 2/2/2/3;
+    justify-self: end;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+  }
+  .main-section-left__caption {
+    max-width: 540px;
+  }
+  .main-section-right__img {
+    max-width: 372px;
+  }
+}
+@media (max-width: 800px) {
+  body {
+    padding: 0px 32px 0px 32px;
+  }
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main-section-left {
+    align-items: center;
+  }
+  .main-section-left .main-section-left__caption {
+    max-width: 476px;
+  }
+  .main-section-left .about {
+    align-items: center;
+    text-align: center;
+  }
+  .main-section-left .products {
+    align-items: center;
+    text-align: center;
+  }
+  .main-section-left .products__list {
+    align-items: center;
+    justify-content: center;
+  }
+  .main-section-left .contact {
+    text-align: center;
+  }
+  .main-section-left .contact .form {
+    width: 479px;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-section-left .contact .form__text-input {
+    max-width: 476px;
+  }
+  .main-section-left .contact .form__button {
+    align-self: center;
+    grid-row: auto;
+    grid-column: auto;
+    max-width: 100%;
+  }
+  .main-section-right {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=style.css.map */
