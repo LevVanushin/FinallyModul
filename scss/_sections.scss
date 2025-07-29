@@ -1,0 +1,178 @@
+.container{
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.main-section-left{
+  max-width: 1282px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+
+  padding: 114px 50px 26px 142px;
+
+  &__caption{
+    max-width: 100%;
+  }
+
+  .about{
+    color: white;
+    
+
+    &__description{
+      text-indent: 1.5%;
+      letter-spacing: 2px;
+      line-height: 23px;
+
+      font: {
+        size: 20px;
+        weight: 400;
+        family: $font;
+      }
+
+    }
+
+  }
+
+  // PRODUCTS 
+
+  .products{
+    position: relative;
+    
+    &__list{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    &__item{
+      position: relative;
+      padding: 13.5px 0px;
+      border: 2px white solid;
+      transition: background-color .1s ease-out;
+
+
+
+      &:hover{
+        background-color: $hover-background-color;
+        border-width: 4px;
+        border-color: $hover-border-color;
+
+        padding: 11.5px 0px;
+        color: $hover-text-color;
+      }
+    }
+
+    &__link{
+      position: relative;
+      padding: 13.5px 24px;
+
+      color: white;
+      text-transform: uppercase;
+
+      &:hover{
+        padding: 11.5px 22px;
+        color: $hover-text-color;
+      }
+
+      font: {
+        size: 18px;
+        weight: 400;
+        family: $font;
+      }
+      
+      
+    }
+  }
+
+
+// FORM 
+
+
+  .form{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, minmax(292px, 1fr));
+    gap: 11px;
+
+    .input{
+      border: none;
+
+      outline: none;
+
+      letter-spacing: 1.8px;
+      padding: 14px;
+
+      font: {
+        size: 18px;
+        weight: 400;
+        family: $font; 
+      };
+    }
+
+    &__input::placeholder{
+        color: black;
+    }
+
+
+    &__text-input{
+      padding: 31px 13px;
+
+      grid-column: span 2;
+
+      outline: none;
+      resize: none;
+      scrollbar-width: none;
+
+      font: {
+        size: 20px;
+        weight: 400;
+        family: $font;
+      }
+    }
+
+    &__button{
+      width: 200px;
+      grid-row: 3;
+
+      background: none;
+      border: 2px white solid;
+      padding: 13.5px 24px;
+
+      color: white;
+      font: {
+        size: 18px;
+        weight: 400;
+        family: $font;
+      }
+
+
+      transition: background-color .2s ease-out;
+      cursor: pointer;
+
+      &:hover{
+        background-color: $hover-background-color;
+        border-color: $hover-border-color;
+        border-width: 4px;
+        padding: 11.5px 22px;
+        color: $hover-text-color;
+      }
+    }
+  }
+}
+
+
+.main-section-right{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+
+
+
