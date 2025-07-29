@@ -1,6 +1,6 @@
 body{
   background: 
-    linear-gradient(to right, rgba(0, 0, 0, 0.5), #00000000 1282px) ,
+    linear-gradient(to right, rgba(0, 0, 0, 0.6), #00000000 1282px) ,
     url(../images/main-bg.png);
 
   background-repeat: no-repeat;
@@ -32,12 +32,14 @@ a{
 
 .caption{
   font: {
-      size: 32px;
-      weight: 500;
-      family: $font;
-    };
+    size: 32px;
+    weight: 500;
+    family: $font;
+  };
 
-    margin-bottom: 26px;
+  margin-bottom: 26px;
 
-    color: white;
+  color: white;
+
+  letter-spacing: 2.4px;
 }
