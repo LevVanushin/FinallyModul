@@ -1,0 +1,43 @@
+body{
+  background: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.5), #00000000 1282px) ,
+    url(../images/main-bg.png);
+
+  background-repeat: no-repeat;
+  
+  background-size:cover;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  backdrop-filter: blur(10px);
+
+}
+
+.bg{
+  position: relative;
+  width: 1282px;
+  opacity: 50%;
+  z-index: -100;
+  background: linear-gradient(to right, #000000, #00000000);
+
+}
+
+a{
+  text-decoration: none;
+}
+
+.shadow{
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.caption{
+  font: {
+      size: 32px;
+      weight: 500;
+      family: $font;
+    };
+
+    margin-bottom: 26px;
+
+    color: white;
+}
